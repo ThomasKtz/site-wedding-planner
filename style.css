@@ -1,0 +1,45 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Tangerine&display=swap');
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    
+
+}
+
+/* Header */
+
+.navbar {
+    
+    height: 20% vh;
+    width: 100%;
+    padding: 25px;
+    border-top: 2px solid #F0DAFF;
+    border-bottom: 2px solid #F0DAFF;
+    margin-top: 3px;
+   
+}
+.navbar .logo p{
+    font-family: 'Tangerine', cursive;
+    font-size: 2.2em;
+    font-weight: 550;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.navbar .liens ul{
+    display: flex;
+    font-size: 0.6em;
+    justify-content: space-between;
+}
+.navbar .liens ul li{
+    margin-left: 10px;
+}
