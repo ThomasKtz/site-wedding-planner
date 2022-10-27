@@ -21,10 +21,13 @@
     
     height: 20% vh;
     width: 100%;
-    padding: 25px;
+    padding: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
     border-top: 2px solid #F0DAFF;
     border-bottom: 2px solid #F0DAFF;
     margin-top: 3px;
+    
    
 }
 .navbar .logo p{
@@ -35,11 +38,28 @@
     margin: auto;
     margin-bottom: 10px;
 }
-.navbar .liens ul{
-    display: flex;
-    font-size: 0.6em;
-    justify-content: space-between;
+.liens{
+    text-align: center;
+
 }
-.navbar .liens ul li{
-    margin-left: 10px;
+.menu li {
+    width: 100%;
+    position: relative;
 }
+
+.sous-menu{
+    display: none;   
+}
+
+.menu a:hover {
+    color: violet;
+}
+
+.menu:hover .sous-menu{
+   display: block;
+   position: absolute; 
+   width: 100%;
+     
+}
+
+   
