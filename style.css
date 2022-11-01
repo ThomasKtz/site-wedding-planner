@@ -1,65 +1,150 @@
-/* Fonts */
+/* FONTS */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Tangerine&display=swap');
 
-/* Reset */
+
+/* RESET */
+
 
 *{
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    margin: 0;
     text-decoration: none;
     list-style-type: none;
-    
+    box-sizing: border-box;
 
 }
 
-/* Header */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 
-.navbar {
-    
-    height: 20% vh;
+
+/* HEADER */
+
+
+nav{
+    height: px;
     width: 100%;
-    padding: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border-top: 2px solid #F0DAFF;
-    border-bottom: 2px solid #F0DAFF;
-    margin-top: 3px;
-    
-   
+    background-color: rgb(197, 190, 176);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid  black;
 }
-.navbar .logo p{
+
+.logo{
+    color: black;
+    font-weight: 500;
     font-family: 'Tangerine', cursive;
-    font-size: 2.2em;
-    font-weight: 550;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 10px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: auto
 }
-.liens{
-    text-align: center;
 
-}
-.menu li {
+.nav-list{
+    position: fixed;
     width: 100%;
-    position: relative;
+    height: 0;
+    top: 75px;
+    background: #efd1f0;
+    float: right;
+    text-align: center;
+    transition: all 0.5s;
 }
 
-.sous-menu{
-    display: none;   
+.nav-list li{
+    opacity: 0;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+
+
 }
 
-.menu a:hover {
-    color: violet;
+.nav-list li a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
-.menu:hover .sous-menu{
-   display: block;
-   position: absolute; 
-   width: 100%;
-     
+.nav-list li a.active, .nav-list li a:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
 }
 
-   
+.hamburger-btn{
+    display: block;
+    font-size: 20px;
+    color: #5c4213;
+    float: right;
+    line-height: 75px;
+    margin-right: 48px;
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-list{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-list li{
+    opacity: 1;
+}
+
+@media screen and (min-width:900px){
+    .logo{
+        width: 20%;
+        margin: 50px ;
+    }
+
+    nav{
+        height: 100px;
+        
+    }
+
+    .hamburger-btn{
+        display: none;
+    }
+
+    .nav-list{
+        position: relative;
+        width:auto;
+        height: 100px;
+        top: 0;
+        background: none;
+        float: right;
+        text-align: center;
+        margin: 0 15px 0 0;
+        transition: none;
+        ;
+    }
+    .nav-list li{
+        display: inline-block;
+        opacity: 1;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-list li a{
+        text-transform: none;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .nav-list li a.active{
+        color: white;
+    }
+
+    .nav-list li a.active:hover{
+        color: black;
+    }
+        
+
+}
