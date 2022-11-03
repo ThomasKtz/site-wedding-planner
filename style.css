@@ -148,3 +148,60 @@ nav{
         
 
 }
+
+.landing{
+     height: 60vh;
+     background: url(images/landing.jpg);
+     background-size: cover;
+     text-align: center;
+}
+
+
+.landing p{
+    padding: 25px;
+    font-size: 13px;
+    
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px black, -2px 2px 3px black;
+    
+}
+
+.landing .question{
+    padding-top: 40px;
+}
+
+@media  screen and (min-width:900px){
+
+    .landing p{
+        font-size: 16px;
+    }
+    .landing .landing-container{
+        display: flex;
+        margin: auto;
+    }
+    .landing .landing-container .left{
+        width: 50%;
+        position: relative;
+    }
+
+    .landing .landing-container .left .left-one{
+        position: absolute;
+        top: 0;
+    }
+    .landing .landing-container .left .left-two{
+        position: absolute;
+        top: 150px;
+    }
+    .landing .landing-container .right{
+        width: 50%;
+        position: relative;
+    }
+    .landing .landing-container .right .right-one{
+        position: absolute;
+        top: 50px;
+    }
+    .landing .landing-container .right .right-two{
+        position: absolute;
+        top: 240px;
+    }
+}
