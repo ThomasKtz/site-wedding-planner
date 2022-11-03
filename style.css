@@ -1,10 +1,10 @@
-/* FONTS */
+                                                                        /* FONTS */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Tangerine&display=swap');
 
 
-/* RESET */
+                                                                        /* RESET */
 
 
 *{
@@ -21,13 +21,13 @@ body{
 }
 
 
-/* HEADER */
+                                                                        /* HEADER */
 
 
 nav{
     height: px;
     width: 100%;
-    background-color: rgb(197, 190, 176);
+    background-color: #c5beb0;
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid  black;
@@ -149,18 +149,21 @@ nav{
 
 }
 
+                                                                     /* SECTION LANDING */
+
 .landing{
      height: 60vh;
      background: url(images/landing.jpg);
      background-size: cover;
      text-align: center;
+     border-bottom: 2px solid black;
 }
 
 
 .landing p{
     padding: 25px;
     font-size: 13px;
-    
+    font-weight: 600;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 3px black, -2px 2px 3px black;
     
@@ -204,4 +207,62 @@ nav{
         position: absolute;
         top: 240px;
     }
+}
+
+                                                                        /* SERVICES */
+
+.services{
+
+    height: 1300px;
+    background-color: #c5beb0 ;
+    font-family: 'Tangerine', cursive;
+    font-size: 32px;
+    
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.services .service-title{
+    padding: 44px;
+    text-align: center;
+}
+.services img{
+    width: 200px;
+    height: 150px;
+    border-radius: 25px;     
+    box-shadow: 2px 2px 20px 2px #000000;
+    
+}
+.services-container>*{
+    margin: 30px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.services p{
+    padding-top: 15px;
+}
+.services-container>*:hover{
+    scale: 1.1;
+}
+
+@media  screen and (min-width:800px) {
+    .services{
+        height: 1050px;
+    }
+    
+}
+@media  screen and (min-width:900px) {
+    .services{
+        height: 1000px;
+    }
+    
+}
+@media  screen and (min-width:1075px) {
+    .services{
+        height: 750px;
+    }
+    
 }
