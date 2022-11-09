@@ -13,11 +13,13 @@
     text-decoration: none;
     list-style-type: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 
@@ -31,6 +33,8 @@ nav{
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid  black;
+    position: fixed;
+    z-index: 100;
 }
 
 .logo{
@@ -158,6 +162,12 @@ nav{
      text-align: center;
      border-bottom: 2px solid black;
 }
+@media  screen and (max-width:500px) {
+    .landing{
+        height: 80vh;
+    }
+    
+}
 
 
 .landing p{
@@ -213,7 +223,7 @@ nav{
 
 .services{
 
-    height: 1300px;
+    height: 2300px;
     background-color: #c5beb0 ;
     font-family: 'Tangerine', cursive;
     font-size: 32px;
@@ -247,6 +257,12 @@ nav{
 .services-container>*:hover{
     scale: 1.1;
 }
+@media  screen and (min-width:537px) {
+    .services{
+        height: 1300px;
+    }
+    
+}
 
 @media  screen and (min-width:800px) {
     .services{
@@ -266,3 +282,5 @@ nav{
     }
     
 }
+
+
