@@ -19,7 +19,6 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    
 }
 
 
@@ -227,6 +226,7 @@ nav{
     background-color: #c5beb0 ;
     font-family: 'Tangerine', cursive;
     font-size: 32px;
+    border-bottom: 2px solid black;
     
 }
 .services-container{
@@ -279,8 +279,56 @@ nav{
 @media  screen and (min-width:1075px) {
     .services{
         height: 750px;
-    }
-    
+    }   
 }
+
+                                                                                  /* CONTACT */
+
+
+.contact{
+    background-color: #c5beb0 ;
+    height: 900px;
+    padding-top: 50px;
+}
+.contact .formulaire{
+    width: 70%;
+    margin: auto;
+    background-color: #aaaaaa;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 20px 2px #000000;
+    max-width: 520px;
+}
+.contact .formulaire p{
+   text-align: center;
+   font-family: 'Tangerine', cursive;
+   font-size: 30px;
+   margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #efd1f0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+textarea{
+    height: 200px;
+}
+
+input[type=submit] {
+    background-color: #efd1f0;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+  }
+  
+  input[type=submit]:hover {
+    background-color: white;
+  }
 
 
